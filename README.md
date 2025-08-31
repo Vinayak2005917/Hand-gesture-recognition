@@ -1,4 +1,4 @@
-# Vinayak Mishra Bhatiyani Astute Intelligence Internship Assesment 
+# Vinayak Mishra Bhatiyani Astute Intelligence Internship Assessment 
 
 # Hand Gesture Recognition
 
@@ -7,13 +7,13 @@ This project uses computer vision and machine learning to recognize hand gesture
 
 ## Video Demonstration
 
-https://youtu.be/uYVTof76p_Q
+[![Watch the demo](https://img.youtube.com/vi/uYVTof76p_Q/0.jpg)](https://youtu.be/uYVTof76p_Q)
 
 ## Technology Justification
-For hand detection, I have chosen MediaPipe Hands with OpenCV. MediaPipe provides highly optimized real-time hand tracking with 21 landmarks per hand, making it lightweight and faster than custom deep learning models. OpenCV was used for image processing, drawing landmarks, and video capture. Together, they allowed efficient implementation without needing large datasets or heavy GPU computation, making them ideal for real-time gesture recognition.
+For hand detection, I have chosen MediaPipe Hands with OpenCV. MediaPipe offers highly optimized real-time hand tracking with 21 landmarks per hand, making it a lightweight and faster alternative to custom deep learning models. OpenCV was used for image processing, drawing landmarks, and video capture. Together, they allowed efficient implementation without needing large datasets or heavy GPU computation, making them ideal for real-time gesture recognition.
 
 ## Gesture Logic Explanation
-The system identifies four gestures using the positions of the 21 hand landmarks. By analyzing relative distances between all the points and comparing with the data in the gestures folder (tolerance and similarity threshold were applied and can be modified).
+The system identifies four gestures using the positions of the 21 hand landmarks, by analyzing relative distances between all the points and comparing with the data in the gestures folder (tolerance and similarity threshold were applied and can be modified).
 
 
 ## Project Structure
@@ -29,10 +29,10 @@ The system identifies four gestures using the positions of the 21 hand landmarks
    pip install -r requirements.txt
    ```
 2. Run `Main.py` to start gesture recognition.
-3. Use `New_gesture.py` to add or test new gestures. This file will open a capture from you primary camera for 5 secounds and records and saves the hand data to a test file, then you have to un-comment a section in the main.py.
+3. Use `New_gesture.py` to add or test new gestures. This file will open a capture from your primary camera for 5 seconds and record and save the hand data to a test file, then you have to uncomment a section in the main.py.
 
 ## Requirements
-- Python 3.10 (Since media pipe dosen't yet support a higher python version)
+- Python 3.10 (Since media pipe doesn't yet support a higher Python version)
 - OpenCV
 - MediaPipe
 
