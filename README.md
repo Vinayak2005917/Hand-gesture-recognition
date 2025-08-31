@@ -7,7 +7,11 @@ This project uses computer vision and machine learning to recognize hand gesture
 
 ## Video Demonstration
 
+<div align="center">
+
 [![Watch the demo](https://img.youtube.com/vi/uYVTof76p_Q/0.jpg)](https://youtu.be/uYVTof76p_Q)
+
+</div>
 
 ## Technology Justification
 For hand detection, I have chosen MediaPipe Hands with OpenCV. MediaPipe offers highly optimized real-time hand tracking with 21 landmarks per hand, making it a lightweight and faster alternative to custom deep learning models. OpenCV was used for image processing, drawing landmarks, and video capture. Together, they allowed efficient implementation without needing large datasets or heavy GPU computation, making them ideal for real-time gesture recognition.
